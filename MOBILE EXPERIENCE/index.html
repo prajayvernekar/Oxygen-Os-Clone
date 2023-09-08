@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css" integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/regular.min.css" integrity="sha512-aNH2ILn88yXgp/1dcFPt2/EkSNc03f9HBFX0rqX3Kw37+vjipi1pK3L9W08TZLhMg4Slk810sPLdJlNIjwygFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css" integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/svg-with-js.min.css" integrity="sha512-j+8sk90CyNqD7zkw9+AwhRuZdEJRLFBUg10GkELVu+EJqpBv4u60cshAYNOidHRgyaKNKhz+7xgwodircCS01g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/v4-font-face.min.css" integrity="sha512-hpWf+VbTLvBF+RSSdHLpJg+nchmQ3mk1+y9b/ICJSQdZt9B4v+zgZCsD54GAI8fV7MbFq7FhrdWgzPmxuluwsw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/v4-shims.min.css" integrity="sha512-ARfx5eajdcCAuWvuJrgUuJ6D25ON3KZRTCghNXXKeJldCQJ5bXS+6CvG2EhcFWITF95uwZydzpufSKvhmSpTxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/v5-font-face.min.css" integrity="sha512-FrptovHG4M5T2rAIxvIeTsv3z3luk7BF7WEYdUkTB8VtkqD+8ZYlVPpJgIGqWK65sxuom0q6/lpXpBu43CdaPg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js" ></script>
+    
+    <title>ONEPLUS-CLONE</title>
+
+</head>
+<body onload="colorshow()">
+    
+    <div class="mobile-body">
+        <div class="screen screen3">
+
+            <div  class="home-screen screen1 screen2">
+                <div class="homescreen-apps ">
+
+                    <div onclick="half_notification_down()" class="status-bar">
+                        <div class="cameraandtime">
+                            <div class="camera">
+        
+                            </div>
+            
+                            <div id="time" class="time">
+                                
+                                
+                            </div>
+                        </div>
+        
+                        <div class="rangeandbattery">
+                            <div class="range">
+                                <i class="fa-solid fa-wifi"></i>
+                                <i id="range" class="fa-solid fa-signal"></i>
+                            </div>
+            
+                            <div class="battery">
+                                100% <i class="fa-solid fa-battery-full"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="close_notification_panel()" class="toclose">
+                        <div class="date-time">
+                            <div id="date" class="date">
+        
+                            </div>
+                            <p class="neversettle">Never Settle</p>
+                            <div id="times" class="times">
+                                <span id="actualtime" class="actualtime">00</span>
+                                <span class="actualtime">:</span>
+                                <span id="actualtime-1" class="actualtime">00</span>
+                            </div>
+                        </div>
+        
+                        <div class="google-search">
+                            <span ><img class="google-logo" src="oneplus images\google logo.png" alt=""></span>
+                            <span>
+                                <svg class="goxjub" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc04" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+                            </span>
+                        </div>
+        
+                        <div class="upper-app-container-2">
+                            <div class="upper-apps-2">
+                                <div style="cursor: pointer;" class="app2">
+                                    <img onclick="youtube()" src="oneplus images\youtube.png" alt="youtube" class="up-app">
+                                    <p>Youtube</p>
+                                </div>
+                                <div onclick="opennetflix()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\netflix.png" alt="gmail" class="up-app">
+                                    <p>Netflix</p>
+                                </div>
+                                <div onclick="openquestion()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\question-papers.png" alt="spotify" class="up-app">
+                                    <p>Que papers</p>
+                                </div>
+                                <div onclick="openspotify1()"style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\spotify.png" alt="spotify" class="up-app">
+                                    <p>Spotify</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="upper-app-container">
+                            <div class="upper-apps">
+                                <div style="cursor: pointer;" class="app1">
+                                    <img onclick="opensettings1()" src="oneplus images\settings.png" alt="setting" class="up-app">
+                                    <p>Settings</p>
+                                </div>
+                                <div style="cursor: pointer;" class="app1">
+                                    <img onclick="openCalculator1()" src="oneplus images\calculator.png" alt="calculator" class="up-app">
+                                    <p>Calculator</p>
+                                </div>
+                                <div style="cursor: pointer;" class="app1">
+                                    <img src="oneplus images\stk.png" alt="portfolio" class="up-app">
+                                    <p>Portfolio</p>
+                                </div>
+                                <div style="cursor: pointer;" class="app1">
+                                    <img onclick="openNotesApp()" src="oneplus images\notes.png" alt="notes" class="up-app">
+                                    <p>Notes</p>
+                                </div>
+                                <div style="cursor: pointer;" class="app1">
+                                    <img onclick="openFileManager1()" src="oneplus images\filemanager.png" alt="filemanager" class="up-app">
+                                    <p>Files</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div onclick="opendrawer()" class="open-drawer">
+                            <i class="fa-solid fa-angle-up"></i>
+                        </div>
+        
+                        <div class="lower-app-container">
+                            <div class="lower-apps">
+                                <div onclick="opendialer()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\dialer.png" alt="dialer" class="low-app">
+                                </div>
+                                <div onclick="openmessage()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\messages.png" alt="messages" class="low-app">
+                                </div>
+                                <div onclick="openchrome()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\chrome.png" alt="chrome" class="low-app">
+                                </div>
+                                <div style="cursor: pointer;" class="app2 image-upload">
+                                    <img src="oneplus images\camera.png" alt="camera" class="low-app">
+                                    <input type="file" id="file-input" accept="image/*"  capture="user">
+                                </div>
+                                <div onclick="opengallery()" style="cursor: pointer;" class="app2">
+                                    <img src="oneplus images\photos.png" alt="gallery" class="low-app">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="navigation-bar">
+                            <div style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                            <div style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                            <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="app-drawer">
+                <div class="status-bar">
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-bar">
+                    <span>
+                        <svg class="_1GTCc" viewBox="5 -1 12 25" height="17" width="17" fill="#686b78"><path d="M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z"></path>
+                        </svg>
+                    </span> 
+                    <span style="font-weight: 500;">Search apps</span>  
+                </div>
+                <div class="border-bottom"></div>
+
+                <div class="drawer-apps-container">
+                    <div class="drawer-apps">
+                        
+                        <div class="list-apps">
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\amazon_shopping.png" alt="Amazon">
+                                    <p>Amazon</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\battlegrounds_india.png" alt="BGMI">
+                                    <p>BGMI</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\browser.png" alt="Browser">
+                                    <p>Browser</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\calculator.png" alt="Calculator">
+                                    <p>Calculator</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\calendar.png" alt="Calender">
+                                    <p>Calender</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\camera.png" alt="Camera">
+                                    <p>Camera</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\clock.png" alt="Clock">
+                                    <p>Clock</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\cloud.png" alt="Cloud">
+                                    <p>Cloud</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\compass.png" alt="Compass">
+                                    <p>Compass</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\chrome.png" alt="Chrome">
+                                    <p>Chrome</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\contacts.png" alt="">
+                                    <p>Contacts</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\dialer.png" alt="Dialer">
+                                    <p>Dialer</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\drive.png" alt="Drive">
+                                    <p>Drive</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\facebook.png" alt="Facebook">
+                                    <p>Facebook</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\filemanager.png" alt="File Manager">
+                                    <p>File</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\flipkart.png" alt="Flipkart">
+                                    <p>Flipkart</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\games.png" alt="Games">
+                                    <p>Games</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\gmail.png" alt="Gmail">
+                                    <p>Gmail</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\google_photos.png" alt="Google Photos">
+                                    <p>G Photos</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\hotstar.png" alt="Hotstar">
+                                    <p>Hotstar</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\instagram.png" alt="Instagram">
+                                    <p>Instagram</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\maps.png" alt="Maps">
+                                    <p>Maps</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\messages.png" alt="Messages">
+                                    <p>Messages</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\music.png" alt="Music">
+                                    <p>Music</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\mx_player.png" alt="Mx Player">
+                                    <p>Mx Player</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\netflix.png" alt="Netflix">
+                                    <p>Netflix</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\notes.png" alt="Notes">
+                                    <p>Notes</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\paytm.png" alt="Paytm">
+                                    <p>Paytm</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\photos.png" alt="Photos">
+                                    <p>Photos</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\play_games.png" alt="Play Games">
+                                    <p>Play Ga..</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\play_movies.png" alt="Play Movies">
+                                    <p>Play Movies</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\playstore.png" alt="Play Store">
+                                    <p>Play Store</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\question-papers.png" alt="question pa..">
+                                    <p>question pa..</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\settings.png" alt="Settings">
+                                    <p>Settings</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\soundrecorder.png" alt="Sound Reco..">
+                                    <p>Sound Rec..</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\spotify.png" alt="">
+                                    <p>Spotify</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\stk.png" alt="">
+                                    <p>Stk</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\telegram.png" alt="">
+                                    <p>Telegram</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\themes.png" alt="">
+                                    <p>Themes</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\truecaller.png" alt="">
+                                    <p>Truecaller</p>
+                                </div>
+                            </div>
+                            <div class="app-row">
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\udemy.png" alt="Udemy">
+                                    <p>Udemy</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\videos.png" alt="Videos">
+                                    <p>Videos</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\weather.png" alt="Weather">
+                                    <p>Weather</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\whatsapp.png" alt="Whatsapp">
+                                    <p>Whatsapp</p>
+                                </div>
+                                <div class="app">
+                                    <img class="apppy" src="oneplus images\youtube.png" alt="Youtube">
+                                    <p>Youtube</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigation-bar-1">
+                    <div onclick="drawercomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="drawercomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+            </div>
+
+            <div class="notification-container">
+
+                <div class="half-noti-block">
+                    <div class="dateandrange">
+                        <div id="dates2" class="dates2">
+                            
+                        </div>
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+                    </div>
+
+                    <div class="noti-icons">
+                        <button style="padding: 12px; font-size: 14px;" id="noti-button-1" class="noti-buttons"><i class="fa fa-wifi"></i></button>
+                        <button style="transform: rotate(90deg); padding: 14px; font-size: 12px;" class="noti-buttons"><i class="fa fa-exchange"></i></button>
+                        <button class="noti-buttons">
+                            <img style="height: 25px; width: 19px; display: flex; align-items: center;" src="https://img.icons8.com/external-solid-style-bomsymbols-/65/null/external-bluetooth-web-design-device-solid-style-set-2-solid-style-bomsymbols--2.png"/>
+                        </button>
+                        <button class="noti-buttons">
+                            <img style="height: 17px; width: 13px; padding: 5px 2px; display: flex; align-items: center;" src="https://img.icons8.com/pastel-glyph/64/null/flash-light.png"/>
+                        </button>
+                        <button style="padding: 9.5px 11px;" class="noti-buttons"><i class="fa-solid fa-rotate"></i></button>
+                        <button class="noti-buttons"><img style="height: 18px; width: 18px; padding-top: 3px;" src="https://img.icons8.com/fluency-systems-regular/48/null/android-l-battery.png"/></button>
+                    </div>
+
+                    <div class="brightness-slider">
+                        <span style="margin-left: 5px; display: flex; align-items: center;" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="grey" viewBox="0 0 24 24" width="15px" height="15px">    <path d="M 12 0 C 11.4 0 11 0.4 11 1 L 11 2 C 11 2.6 11.4 3 12 3 C 12.6 3 13 2.6 13 2 L 13 1 C 13 0.4 12.6 0 12 0 z M 4.1992188 3.1992188 C 3.9492188 3.1992187 3.7 3.3 3.5 3.5 C 3.1 3.9 3.1 4.5003906 3.5 4.9003906 L 4.1992188 5.5996094 C 4.5992187 5.9996094 5.1996094 5.9996094 5.5996094 5.5996094 C 5.9996094 5.1996094 5.9996094 4.5992188 5.5996094 4.1992188 L 4.9003906 3.5 C 4.7003906 3.3 4.4492188 3.1992188 4.1992188 3.1992188 z M 19.800781 3.1992188 C 19.550781 3.1992188 19.299609 3.3 19.099609 3.5 L 18.400391 4.1992188 C 18.000391 4.5992187 18.000391 5.1996094 18.400391 5.5996094 C 18.800391 5.9996094 19.400781 5.9996094 19.800781 5.5996094 L 20.5 4.9003906 C 20.9 4.5003906 20.9 3.9 20.5 3.5 C 20.3 3.3 20.050781 3.1992188 19.800781 3.1992188 z M 12 5 A 7 7 0 0 0 5 12 A 7 7 0 0 0 12 19 A 7 7 0 0 0 19 12 A 7 7 0 0 0 12 5 z M 1 11 C 0.4 11 0 11.4 0 12 C 0 12.6 0.4 13 1 13 L 2 13 C 2.6 13 3 12.6 3 12 C 3 11.4 2.6 11 2 11 L 1 11 z M 22 11 C 21.4 11 21 11.4 21 12 C 21 12.6 21.4 13 22 13 L 23 13 C 23.6 13 24 12.6 24 12 C 24 11.4 23.6 11 23 11 L 22 11 z M 4.9003906 18.099609 C 4.6503906 18.099609 4.3992188 18.200391 4.1992188 18.400391 L 3.5 19.099609 C 3.1 19.499609 3.1 20.1 3.5 20.5 C 3.9 20.9 4.5003906 20.9 4.9003906 20.5 L 5.5996094 19.800781 C 5.9996094 19.400781 5.9996094 18.800391 5.5996094 18.400391 C 5.3996094 18.200391 5.1503906 18.099609 4.9003906 18.099609 z M 19.099609 18.099609 C 18.849609 18.099609 18.600391 18.200391 18.400391 18.400391 C 18.000391 18.800391 18.000391 19.400781 18.400391 19.800781 L 19.099609 20.5 C 19.499609 20.9 20.1 20.9 20.5 20.5 C 20.9 20.1 20.9 19.499609 20.5 19.099609 L 19.800781 18.400391 C 19.600781 18.200391 19.349609 18.099609 19.099609 18.099609 z M 12 21 C 11.4 21 11 21.4 11 22 L 11 23 C 11 23.6 11.4 24 12 24 C 12.6 24 13 23.6 13 23 L 13 22 C 13 21.4 12.6 21 12 21 z"/>
+                            </svg>
+                        </span>
+
+                        <input class="slider" id="slider" type="range" min="1" max="100" value="100">
+                        <span style="margin-right: 5px; display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="grey" viewBox="0 0 24 24" width="15px" height="15px"><path d="M 11.875 0.1875 C 11.371094 0.25 10.996094 0.679688 11 1.1875 L 11 3.1875 C 10.996094 3.546875 11.183594 3.882813 11.496094 4.066406 C 11.808594 4.246094 12.191406 4.246094 12.503906 4.066406 C 12.816406 3.882813 13.003906 3.546875 13 3.1875 L 13 1.1875 C 13.003906 0.898438 12.878906 0.625 12.664063 0.433594 C 12.449219 0.242188 12.160156 0.152344 11.875 0.1875 Z M 4 3.375 C 3.625 3.441406 3.324219 3.714844 3.21875 4.078125 C 3.113281 4.445313 3.222656 4.835938 3.5 5.09375 L 4.90625 6.5 C 5.148438 6.796875 5.535156 6.933594 5.910156 6.847656 C 6.28125 6.761719 6.574219 6.46875 6.660156 6.097656 C 6.746094 5.722656 6.609375 5.335938 6.3125 5.09375 L 4.90625 3.6875 C 4.71875 3.488281 4.460938 3.378906 4.1875 3.375 C 4.15625 3.375 4.125 3.375 4.09375 3.375 C 4.0625 3.375 4.03125 3.375 4 3.375 Z M 19.6875 3.375 C 19.460938 3.40625 19.25 3.519531 19.09375 3.6875 L 17.6875 5.09375 C 17.390625 5.335938 17.253906 5.722656 17.339844 6.097656 C 17.425781 6.46875 17.71875 6.761719 18.089844 6.847656 C 18.464844 6.933594 18.851563 6.796875 19.09375 6.5 L 20.5 5.09375 C 20.796875 4.808594 20.886719 4.367188 20.726563 3.988281 C 20.570313 3.609375 20.191406 3.367188 19.78125 3.375 C 19.75 3.375 19.71875 3.375 19.6875 3.375 Z M 12 5.1875 C 8.15625 5.1875 5 8.34375 5 12.1875 C 5 16.03125 8.15625 19.1875 12 19.1875 C 15.84375 19.1875 19 16.03125 19 12.1875 C 19 8.34375 15.84375 5.1875 12 5.1875 Z M 12 7.1875 C 14.753906 7.1875 17 9.433594 17 12.1875 C 17 14.941406 14.753906 17.1875 12 17.1875 C 9.246094 17.1875 7 14.941406 7 12.1875 C 7 9.433594 9.246094 7.1875 12 7.1875 Z M 0.8125 11.1875 C 0.261719 11.238281 -0.144531 11.730469 -0.09375 12.28125 C -0.0429688 12.832031 0.449219 13.238281 1 13.1875 L 3 13.1875 C 3.359375 13.191406 3.695313 13.003906 3.878906 12.691406 C 4.058594 12.378906 4.058594 11.996094 3.878906 11.683594 C 3.695313 11.371094 3.359375 11.183594 3 11.1875 L 1 11.1875 C 0.96875 11.1875 0.9375 11.1875 0.90625 11.1875 C 0.875 11.1875 0.84375 11.1875 0.8125 11.1875 Z M 20.8125 11.1875 C 20.261719 11.238281 19.855469 11.730469 19.90625 12.28125 C 19.957031 12.832031 20.449219 13.238281 21 13.1875 L 23 13.1875 C 23.359375 13.191406 23.695313 13.003906 23.878906 12.691406 C 24.058594 12.378906 24.058594 11.996094 23.878906 11.683594 C 23.695313 11.371094 23.359375 11.183594 23 11.1875 L 21 11.1875 C 20.96875 11.1875 20.9375 11.1875 20.90625 11.1875 C 20.875 11.1875 20.84375 11.1875 20.8125 11.1875 Z M 5.46875 17.59375 C 5.25 17.632813 5.054688 17.742188 4.90625 17.90625 L 3.5 19.28125 C 3.101563 19.667969 3.097656 20.304688 3.484375 20.703125 C 3.871094 21.101563 4.507813 21.105469 4.90625 20.71875 L 6.3125 19.3125 C 6.636719 19.011719 6.722656 18.535156 6.527344 18.140625 C 6.335938 17.742188 5.902344 17.523438 5.46875 17.59375 Z M 18.1875 17.59375 C 17.8125 17.660156 17.511719 17.933594 17.40625 18.296875 C 17.300781 18.664063 17.410156 19.054688 17.6875 19.3125 L 19.09375 20.71875 C 19.492188 21.105469 20.128906 21.101563 20.515625 20.703125 C 20.902344 20.304688 20.898438 19.667969 20.5 19.28125 L 19.09375 17.90625 C 18.886719 17.683594 18.585938 17.570313 18.28125 17.59375 C 18.25 17.59375 18.21875 17.59375 18.1875 17.59375 Z M 11.875 20.1875 C 11.371094 20.25 10.996094 20.679688 11 21.1875 L 11 23.1875 C 10.996094 23.546875 11.183594 23.882813 11.496094 24.066406 C 11.808594 24.246094 12.191406 24.246094 12.503906 24.066406 C 12.816406 23.882813 13.003906 23.546875 13 23.1875 L 13 21.1875 C 13.003906 20.898438 12.878906 20.625 12.664063 20.433594 C 12.449219 20.242188 12.160156 20.152344 11.875 20.1875 Z"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="misc">
+                        <span id="usage">JIO 1.80 GB used</span>
+                        <span onclick="full_notify_pane()" style="padding-right: 60px; color: #c0c0c0; font-size: 18px"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <span><i class="fa fa-cog" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                    
+                <div class="notification-container-full">
+
+                    <div class="noti-full-date-time">
+                        <div class="noti-time" >
+                            <span class="noti-hours">0</span>
+                            <span>:</span>
+                            <span class="noti-minutes">00</span>
+                        </div>
+
+                        <div style="margin-top: 12.5px;" class="noti-date">
+                            mon,nov 9
+                        </div>
+                    </div>
+
+                    <div class="full-noti-icons-1">
+                        <div class="icons-coloumn left-mar">
+                            <button style="padding: 15px;" class="full-noti-icon-each"><i class="fa fa-wifi"></i></button>
+                            <p>Wifi</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button style="transform: rotate(90deg); padding: 15px;" class="full-noti-icon-each"><i class="fa fa-exchange"></i></button>
+                            <p>Mobile data</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button class="full-noti-icon-each">
+                                <img style="height: 19px; width: 19px; padding: 0px;" src="https://img.icons8.com/external-solid-style-bomsymbols-/65/null/external-bluetooth-web-design-device-solid-style-set-2-solid-style-bomsymbols--2.png"/>
+                            </button>
+                            <p>Bluetooth</p>
+                        </div>
+                        <div class="icons-coloumn right-mar">
+                            <button class="full-noti-icon-each">
+                                <img style="height: 20px; width: 15px; padding: 0px;" src="https://img.icons8.com/pastel-glyph/64/null/flash-light.png"/>
+                            </button>
+                            <p>Flashlight</p>
+                        </div>
+                    </div>
+
+                    <div class="full-noti-icons-1">
+                        <div class="icons-coloumn left-mar">
+                            <button class="full-noti-icon-each"><i class="fa-solid fa-rotate"></i></button>
+                            <p>Auto rotate</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button class="full-noti-icon-each"><img style="height: 18px; width: 18px;" src="https://img.icons8.com/fluency-systems-regular/48/null/android-l-battery.png"/></button>
+                            <p>Battery Saver</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button class="full-noti-icon-each"><img style="height: 16px; width: 16px;" src="https://img.icons8.com/ios/50/null/airplane-mode-on--v1.png"/></i></button>
+                            <p>Airplane mode</p>
+                        </div>
+                        <div class="icons-coloumn right-mar">
+                            <button class="full-noti-icon-each" id="dark-mode"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                            <p>Dark Mode</p>
+                        </div>
+                    </div>
+
+                    <div class="full-noti-icons-1">
+                        <div class="icons-coloumn left-mar">
+                            <button class="full-noti-icon-each"><i class="fa-solid fa-location-pin"></i></button>
+                            <p>Location</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button class="full-noti-icon-each"><i class="fa fa-podcast"></i></button>
+                            <p>Hotspot</p>
+                        </div>
+                        <div class="icons-coloumn">
+                            <button class="full-noti-icon-each">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16"><path d="m12 2a10 10 0 0 0 -10 10 10 10 0 0 0 10 10 10 10 0 0 0 10-10 10 10 0 0 0 -10-10m5 11h-10v-2h10z"/>
+                                </svg>
+                            </button>
+                            <p>Do not Disturb</p>
+                        </div>
+                        <div class="icons-coloumn right-mar">
+                            <button class="full-noti-icon-each"><img style="height: 19px; width: 19px;" src="https://img.icons8.com/material-outlined/24/null/nfc-logo.png"/></button>
+                            <p>NFC</p>
+                        </div>
+                    </div>
+
+                    <div class="brightness-slider">
+                        <span style="margin-left: 5px; display: flex; align-items: center;" >
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="grey" viewBox="0 0 24 24" width="15px" height="15px">    <path d="M 12 0 C 11.4 0 11 0.4 11 1 L 11 2 C 11 2.6 11.4 3 12 3 C 12.6 3 13 2.6 13 2 L 13 1 C 13 0.4 12.6 0 12 0 z M 4.1992188 3.1992188 C 3.9492188 3.1992187 3.7 3.3 3.5 3.5 C 3.1 3.9 3.1 4.5003906 3.5 4.9003906 L 4.1992188 5.5996094 C 4.5992187 5.9996094 5.1996094 5.9996094 5.5996094 5.5996094 C 5.9996094 5.1996094 5.9996094 4.5992188 5.5996094 4.1992188 L 4.9003906 3.5 C 4.7003906 3.3 4.4492188 3.1992188 4.1992188 3.1992188 z M 19.800781 3.1992188 C 19.550781 3.1992188 19.299609 3.3 19.099609 3.5 L 18.400391 4.1992188 C 18.000391 4.5992187 18.000391 5.1996094 18.400391 5.5996094 C 18.800391 5.9996094 19.400781 5.9996094 19.800781 5.5996094 L 20.5 4.9003906 C 20.9 4.5003906 20.9 3.9 20.5 3.5 C 20.3 3.3 20.050781 3.1992188 19.800781 3.1992188 z M 12 5 A 7 7 0 0 0 5 12 A 7 7 0 0 0 12 19 A 7 7 0 0 0 19 12 A 7 7 0 0 0 12 5 z M 1 11 C 0.4 11 0 11.4 0 12 C 0 12.6 0.4 13 1 13 L 2 13 C 2.6 13 3 12.6 3 12 C 3 11.4 2.6 11 2 11 L 1 11 z M 22 11 C 21.4 11 21 11.4 21 12 C 21 12.6 21.4 13 22 13 L 23 13 C 23.6 13 24 12.6 24 12 C 24 11.4 23.6 11 23 11 L 22 11 z M 4.9003906 18.099609 C 4.6503906 18.099609 4.3992188 18.200391 4.1992188 18.400391 L 3.5 19.099609 C 3.1 19.499609 3.1 20.1 3.5 20.5 C 3.9 20.9 4.5003906 20.9 4.9003906 20.5 L 5.5996094 19.800781 C 5.9996094 19.400781 5.9996094 18.800391 5.5996094 18.400391 C 5.3996094 18.200391 5.1503906 18.099609 4.9003906 18.099609 z M 19.099609 18.099609 C 18.849609 18.099609 18.600391 18.200391 18.400391 18.400391 C 18.000391 18.800391 18.000391 19.400781 18.400391 19.800781 L 19.099609 20.5 C 19.499609 20.9 20.1 20.9 20.5 20.5 C 20.9 20.1 20.9 19.499609 20.5 19.099609 L 19.800781 18.400391 C 19.600781 18.200391 19.349609 18.099609 19.099609 18.099609 z M 12 21 C 11.4 21 11 21.4 11 22 L 11 23 C 11 23.6 11.4 24 12 24 C 12.6 24 13 23.6 13 23 L 13 22 C 13 21.4 12.6 21 12 21 z"/>
+                            </svg>
+                        </span>
+                        <!-- <span style="margin-left: 5px;" ><i class="fa fa-wifi"></i></span> -->
+                        <input class="slider1" id="slider" type="range" min="1" max="100" value="100">
+                        <span style="margin-right: 5px; display: flex; align-items: center;">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="grey" viewBox="0 0 24 24" width="15px" height="15px"><path d="M 11.875 0.1875 C 11.371094 0.25 10.996094 0.679688 11 1.1875 L 11 3.1875 C 10.996094 3.546875 11.183594 3.882813 11.496094 4.066406 C 11.808594 4.246094 12.191406 4.246094 12.503906 4.066406 C 12.816406 3.882813 13.003906 3.546875 13 3.1875 L 13 1.1875 C 13.003906 0.898438 12.878906 0.625 12.664063 0.433594 C 12.449219 0.242188 12.160156 0.152344 11.875 0.1875 Z M 4 3.375 C 3.625 3.441406 3.324219 3.714844 3.21875 4.078125 C 3.113281 4.445313 3.222656 4.835938 3.5 5.09375 L 4.90625 6.5 C 5.148438 6.796875 5.535156 6.933594 5.910156 6.847656 C 6.28125 6.761719 6.574219 6.46875 6.660156 6.097656 C 6.746094 5.722656 6.609375 5.335938 6.3125 5.09375 L 4.90625 3.6875 C 4.71875 3.488281 4.460938 3.378906 4.1875 3.375 C 4.15625 3.375 4.125 3.375 4.09375 3.375 C 4.0625 3.375 4.03125 3.375 4 3.375 Z M 19.6875 3.375 C 19.460938 3.40625 19.25 3.519531 19.09375 3.6875 L 17.6875 5.09375 C 17.390625 5.335938 17.253906 5.722656 17.339844 6.097656 C 17.425781 6.46875 17.71875 6.761719 18.089844 6.847656 C 18.464844 6.933594 18.851563 6.796875 19.09375 6.5 L 20.5 5.09375 C 20.796875 4.808594 20.886719 4.367188 20.726563 3.988281 C 20.570313 3.609375 20.191406 3.367188 19.78125 3.375 C 19.75 3.375 19.71875 3.375 19.6875 3.375 Z M 12 5.1875 C 8.15625 5.1875 5 8.34375 5 12.1875 C 5 16.03125 8.15625 19.1875 12 19.1875 C 15.84375 19.1875 19 16.03125 19 12.1875 C 19 8.34375 15.84375 5.1875 12 5.1875 Z M 12 7.1875 C 14.753906 7.1875 17 9.433594 17 12.1875 C 17 14.941406 14.753906 17.1875 12 17.1875 C 9.246094 17.1875 7 14.941406 7 12.1875 C 7 9.433594 9.246094 7.1875 12 7.1875 Z M 0.8125 11.1875 C 0.261719 11.238281 -0.144531 11.730469 -0.09375 12.28125 C -0.0429688 12.832031 0.449219 13.238281 1 13.1875 L 3 13.1875 C 3.359375 13.191406 3.695313 13.003906 3.878906 12.691406 C 4.058594 12.378906 4.058594 11.996094 3.878906 11.683594 C 3.695313 11.371094 3.359375 11.183594 3 11.1875 L 1 11.1875 C 0.96875 11.1875 0.9375 11.1875 0.90625 11.1875 C 0.875 11.1875 0.84375 11.1875 0.8125 11.1875 Z M 20.8125 11.1875 C 20.261719 11.238281 19.855469 11.730469 19.90625 12.28125 C 19.957031 12.832031 20.449219 13.238281 21 13.1875 L 23 13.1875 C 23.359375 13.191406 23.695313 13.003906 23.878906 12.691406 C 24.058594 12.378906 24.058594 11.996094 23.878906 11.683594 C 23.695313 11.371094 23.359375 11.183594 23 11.1875 L 21 11.1875 C 20.96875 11.1875 20.9375 11.1875 20.90625 11.1875 C 20.875 11.1875 20.84375 11.1875 20.8125 11.1875 Z M 5.46875 17.59375 C 5.25 17.632813 5.054688 17.742188 4.90625 17.90625 L 3.5 19.28125 C 3.101563 19.667969 3.097656 20.304688 3.484375 20.703125 C 3.871094 21.101563 4.507813 21.105469 4.90625 20.71875 L 6.3125 19.3125 C 6.636719 19.011719 6.722656 18.535156 6.527344 18.140625 C 6.335938 17.742188 5.902344 17.523438 5.46875 17.59375 Z M 18.1875 17.59375 C 17.8125 17.660156 17.511719 17.933594 17.40625 18.296875 C 17.300781 18.664063 17.410156 19.054688 17.6875 19.3125 L 19.09375 20.71875 C 19.492188 21.105469 20.128906 21.101563 20.515625 20.703125 C 20.902344 20.304688 20.898438 19.667969 20.5 19.28125 L 19.09375 17.90625 C 18.886719 17.683594 18.585938 17.570313 18.28125 17.59375 C 18.25 17.59375 18.21875 17.59375 18.1875 17.59375 Z M 11.875 20.1875 C 11.371094 20.25 10.996094 20.679688 11 21.1875 L 11 23.1875 C 10.996094 23.546875 11.183594 23.882813 11.496094 24.066406 C 11.808594 24.246094 12.191406 24.246094 12.503906 24.066406 C 12.816406 23.882813 13.003906 23.546875 13 23.1875 L 13 21.1875 C 13.003906 20.898438 12.878906 20.625 12.664063 20.433594 C 12.449219 20.242188 12.160156 20.152344 11.875 20.1875 Z"/>
+                            </svg>
+                        </span>
+                    </div>
+
+                    <div class="misc">
+                        <span id="usage">JIO 1.80 GB used</span>
+                        <div style="font-size: 14px; display:flex; margin: 0 5px; color:dimgrey" class="small-part">
+                            <span style="margin: 0 7px;"><i class="fa fa-pen"></i></span>
+                            <span style="margin: 0 20px 0 15px;"><i class="fa-regular fa-user"></i></span>
+                            <span>⚙️</span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="gallery">   
+
+                <div class="status-bar">
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blocks">
+                    <div onclick="hideout1()" class="block0 bl1"></div>
+                    <div onclick="hideout2()" class="block0 bl2"></div>
+                    <div onclick="hideout3()" class="block0 bl3"></div>
+                </div>
+
+                <div class="photos-container">
+                    <div onclick="resetTheHeight()" class="photos-logo">
+                        Photos
+                    </div>
+
+                    <div class="images commonScroll">
+                        <img src="https://source.unsplash.com/featured?coding" alt="g" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?flash" alt="h" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?batman" alt="g" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?food" alt="j" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?handsome boys" alt="h" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?dogs" alt="g" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?beautiful girls" alt="j" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?spiderman" alt="g" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?avengers" alt="f" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?college" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?money" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?fighting" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?thor" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?sundar pichai" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?virat kohli" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?paint" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?sweets" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?animals" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?movies" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?spark" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?electrical" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?love" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?mobiles" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?cats" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?sports" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?couple" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?scenery" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?watches" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?girlfriend" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?running" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?sun" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?cricket" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?songs" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?places" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?laptops" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?books" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?papers" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?maths" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?friends" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?bags" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?baby" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?trees" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?birds" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?superman" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?clothes" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?pens" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?rubber" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?logos" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?schools" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?umbrella" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?selfie" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?teachers" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?laughing" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?crying" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?bedroom" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?fire" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?smoke" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?cycle" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?water" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?bike" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?program" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?cars" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?road" alt="k" class="diff-imgs">
+                        <img src="https://source.unsplash.com/featured?toys" alt="k" class="diff-imgs">
+                    </div>
+                </div>
+
+                <div class="collections-container">
+                    <div onclick="resetTheHeight()" class="collections-logo">
+                        Collections
+                    </div>
+
+                    <div class="images-1 commonScroll">
+                        
+                        <div class="school-frnds">
+                            <p style="margin: 10px;">School Friends</p>
+                            <div class="school-images">
+                                <img src="oneplus images\abhi1.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\abhi2.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\mah1.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\mah2.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\mah3.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\pad1.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\pad2.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\pad3.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\pad4.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\pad5.jpeg" alt="" class="SC-FRNDS">
+                            </div>
+                        </div>
+
+                        <div class="diploma-frnds">
+                            <p style="margin: 10px;">Diploma Friends</p>
+                            <div class="school-images">
+                                <img src="oneplus images\dip1.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip2.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip3.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip4.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip5.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip6.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip7.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip8.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip9.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\dip10.jpeg" alt="" class="SC-FRNDS">
+                            </div>
+                        </div>
+
+                        <div class="engg-frnds">
+                            <p style="margin: 10px;">Engineering Friends</p>
+                            <div class="school-images">
+                                <img src="oneplus images\eng1.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng2.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng3.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng4.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng5.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng6.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng7.jpg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng8.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng9.jpeg" alt="" class="SC-FRNDS">
+                                <img src="oneplus images\eng10.jpeg" alt="" class="SC-FRNDS">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="explore-container">
+
+                    <div onclick="resetTheHeight()" class="explore-logo">
+                        Explore
+                    </div>
+
+                    <div class="contentsInside commonScroll">
+                        <p style="font-weight: 600; margin: 10px 0 30px 15px;">SMART CATEGORY</p>
+                        <div class="explore-icons">
+                            <div class="explore-names">
+                                <i class="fa-solid fa-user"></i>
+                                <p>People</p>
+                            </div>
+                            <div class="explore-names">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Places</p>
+                            </div>
+                            <div class="explore-names">
+                                <i class="fa-solid fa-compass-drafting"></i>
+                                <p>Things</p>
+                            </div>
+                        </div>
+
+                        <p style="font-weight: 600; margin: 30px 0 180px 15px;">STORY</p>
+                        
+                        <div class="story">
+                            <h2 style="margin: 0 0 10px 0;">No story yet</h2>
+                            <p style="margin: 0 0 145px 0;">
+                                With a number of photos, Gallery will automaticallycreate 
+                                your own store while your phone is charging and screen is off
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navigation-bar-2">
+                    <div onclick="gallerycomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="gallerycomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+            
+            <div class="dialer">
+                <div class="status-bar">
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dailerblock" class="dailerMains">
+
+                    <p class="calls-logo">Calls</p>
+
+                    <div class="call-list">
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">6362491546</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">7892635664</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">8197422958</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">6363098689</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">6303879734</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">9380874094</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">9663959752</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">9164493673</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">9113036649</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">7483070665</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">9902503304</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">8861930139</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">6360421850</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">7975098726</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">8861930139</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">7542819645</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">8541697823</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">7351496541</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                        <div class="calls">
+                            <span style="margin-right: 10px ;border-radius: 50%; background-color: lightgrey; padding: 7px 11px;"><i class="fa-solid fa-user"></i></span>
+                            <span style="margin-right: 125px ;">8788583359</span>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                        </div>
+
+                    </div>
+
+                    <div class="dial-pad">
+                        <img style="height: 25px; width: 25px;" src="oneplus images\dialpad icon.png" alt="dialpad icon">
+                    </div>
+
+                </div>
+
+                <div class="dialer-contacts">
+
+                    <p onclick="resetTheHeight2()" class="contacts-logo">Contacts</p>
+
+                    <div class="contact-icons">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span style="margin-left: 17px;"><i class="fa-solid fa-gear"></i></span>
+                    </div>
+                    
+                    <div onscroll="ContactsHeight()" class="contactScroll">
+
+                        <div class="setProfile">
+                            <i style="border-radius: 50%; background-color: lightgrey; padding: 13px 15px;" class="fa-solid fa-user"></i>
+                            <div class="discp">
+                                <span style="font-size: 15px; margin-bottom: 3px;">Set up your profile</span>
+                                <span style="font-size: 10px;">Business card, Emergency information</span>
+                            </div>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: darkblue; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Aadesh</span>
+                        </div>
+                        
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: green; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Adithya L</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: hotpink; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Abhishek Rane</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: cyan; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Ajay Revankar</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: red; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Alisha</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: maroon; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Ashalatha</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: orange; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">B</span>
+                            <span >Bipin</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: lightblue; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">B</span>
+                            <span >Bhagyashree</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: grey; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">D</span>
+                            <span >Dinu Gowda</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: darkblue; padding: 5px 8.5px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">M</span>
+                            <span >Mohammed Noor</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: red; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">P</span>
+                            <span >Praveen</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: green; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">V</span>
+                            <span >Vinod</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: hotpink; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">P</span>
+                            <span >Padmaj</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: blue; padding: 5px 8.5px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">M</span>
+                            <span >Mahil</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: darkgreen; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">R</span>
+                            <span >Ritik</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: hotpink; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">V</span>
+                            <span >Varsha</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: orange; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">P</span>
+                            <span >Pavitra</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: maroon; padding: 5px 8.5px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">M</span>
+                            <span >Mohammed Zain</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: cyan; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">A</span>
+                            <span >Ashish</span>
+                        </div>
+
+                        <div class="contacts-list">
+                            <span style="border-radius: 50%; background-color: green; padding: 4px 10px; color: white; font-family: 'Open Sans', sans-serif; margin-right: 8px;">S</span>
+                            <span >Samarth</span>
+                        </div>
+                    </div>
+
+                    <div class="add-contact">
+                        <i class="fa-solid fa-user-plus"></i>
+                    </div>
+                    
+                </div>
+
+                <div class="dialer-footer">
+                        <i onclick="hidecontacts()" id="dialerbook" class="fa-solid fa-phone"></i>
+                        <i onclick="hidecalls()" style="padding-right: 25px; color: lightgrey;" id="contactbook" class="fa-solid fa-address-book"></i>
+                </div>
+
+                <div class="navigation-bar-3">
+                    <div onclick="dialercomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="dialercomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+            </div>
+
+            <div class="messages">
+
+                <div class="status-bar">
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mssgHeader">
+                    <h3>Prajay ( The Great )</h3>
+                    <div class="mssgIcons">
+                        <i class="fa-solid fa-video"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+
+                <div style="overflow-y: scroll" id="dispMssg" class="dispMssg">
+
+                  <p class="message-type">Good day, user. Hope you are well</p> <br>
+
+                </div>
+
+                <div class="message-footer">
+                    <div class="add-sign">+</div>
+                    <input type="text" id="text" name="message" placeholder="Send message">
+                    <div id="sendMessage" class="sendMessage">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <!-- <p style="margin: 0; font-size: 9.5px; margin-top: 3px" >SMS</p>  -->
+                    </div>
+                </div>
+
+                <div class="navigation-bar-4">
+                    <div onclick="messagecomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="messagecomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <!-- <div class="camera-1">
+
+                <div class="camHeader">
+
+                </div>
+
+                <div class="camOnOff">
+                    <video id="webcam" autoplay playsinlne width="312" height="100"></video>
+                    <input type="file" accept="image/*" capture="user">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+                <div class="camCapture">
+
+                    <a onclick="takecapture()" download><div class="camButton"></div></a>
+
+                </div>
+
+                <div class="navigation-bar-5">
+                    <div onclick="messagecomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="messagecomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div> -->
+
+
+            <div class="Chrome">
+
+                <div class="status-bar-1">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <iframe class="Chrome1" src="https://www.bing.com" frameborder="0"></iframe>
+
+                <div class="navigation-bar-6">
+                    <div onclick="history.back()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="chromecomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="netflix">
+
+                <div class="status-bar-1">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <iframe class="netflix1" src="https://nextflix-azure.vercel.app/browse" frameborder="0"></iframe>
+
+                <div class="navigation-bar-6">
+                    <div onclick="netflixcomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="netflixcomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="questionpapers1">
+
+                <div class="status-bar-1">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <iframe class="netflix1" src="https://prajayvernekar.github.io/Previous-Question-Papers/" frameborder="0"></iframe>
+
+                <div class="navigation-bar-6">
+                    <div onclick="questioncomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="questioncomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="spotify1">
+
+                <div class="status-bar-2">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="spotifyMain">
+
+                    <div class="spotifyMainScroll">
+
+                        <div class="spotifyHeader">
+
+                            <div class="goodmorning">Good morning</div>
+    
+                            <div class="SpotiHeadericons">
+                                <i class="fa-regular fa-bell"></i>
+                                <i class="fa-regular fa-clock"></i>
+                                <i class="fa-solid fa-gear"></i>
+                            </div>
+
+                        </div>
+
+                        <div class="spotiTopImage">
+                            <img class="spotiTopImage" src="oneplus images\spotitopimage.jpg" alt="">
+                        </div>
+
+                        <div class="madeForYou">
+                            <div class="MFUname">Made For You</div>
+                            <div class="madeForYouImages">
+                                <img src="oneplus images\MFU1.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\MFY2.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\MFY3.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\MFY4.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\MFY5.jpg" alt="" class="MFUStyle">
+                            </div>
+                        </div>
+
+                        <div class="madeForYou">
+                            <div class="MFUname">Based on your recent listening</div>
+                            <div class="madeForYouImages">
+                                <img src="oneplus images\BYRL1.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\BYRL2.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\BYRL3.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\BYRL4.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\BYRL5.jpg" alt="" class="MFUStyle">
+                            </div>
+                        </div>
+                        
+                        <div class="madeForYou">
+                            <div class="MFUname">Today's biggest hits</div>
+                            <div class="madeForYouImages">
+                                <img src="oneplus images\TBH1.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\TBH2.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\TBH3.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\TBH4.jpg" alt="" class="MFUStyle">
+                                <img src="oneplus images\TBH5.jpg" alt="" class="MFUStyle">
+                            </div>
+                        </div>
+
+                        <div class="spotiheadline">
+                            You can actually play the below songs
+                        </div>
+
+                        <div class="spotifySongs">
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\bol-do-na-zara.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Bol do na zara.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\bewafa.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Bewafa.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\chale ana.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\CHALE AANA.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\dil mein chupaa lunga.jfif" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Dil Mein Chhupa Loonga.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+                            
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\guzarish.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Guzarish _ Ghajini.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\hale dil.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Hale Dil.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\hua hai aaj pehli bar.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Hua hai aaj pehli baar.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\kaise mujhse.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Kaise Mujhe.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\kaun tujhe.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Kaun tujhe.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\pal.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\Pal.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\disco song.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\The Disco Song.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\unholy.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\unholy.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\WTF.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\WTF.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+
+                            <div class="SingleSongs">
+
+                                <img class="SongImage" src="oneplus images\hare ram hare ram.jpg" alt="">
+                                <p style="padding-left: 10px; margin: 0; background-color: white;">Bol do na zara</p>
+                                <audio class="spotsong" src="songs\hare ram hare ram.mp3" type="audio/mpeg" controls>
+                                </audio>
+
+                            </div>
+                            
+
+                        </div>
+
+                    </div>
+
+                    <div class="spotifyFooter">
+                        <div class="spotiHome">
+                            <i style="text-align: center; color: white;" class="fa-solid fa-house"></i>
+                            <span style="font-size: 9px; margin-top: 3px; color: white">Home</span>
+                        </div>
+                        <div class="spotiSearch">
+                            <i style="text-align: center;" class="fa-solid fa-magnifying-glass"></i>
+                            <span style="font-size: 9px; margin-top: 3px;">Search</span>
+                        </div>
+                        <div class="spotiLibrary">
+                            <i style="text-align: center;" class="fa-solid fa-book"></i>
+                            <span style="font-size: 9px; margin-top: 3px;">Your Library</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="navigation-bar-7">
+                    <div onclick="spotifycomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="spotifycomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="settingsApp">
+
+                <div class="status-bar-2">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="settingHeading">
+                    <p>Settings</p>
+                </div>
+
+                <div class="SettingSearchIcon">
+                    <i id="SettingSearchIcon" class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <div class="SettingScroll">
+
+                    <div class="SetSection1">
+                        
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\wifi1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Wi-Fi & internet</p>
+                                <p class="S1GreyDisp" >Sim, mobile network, data usage, hotspot</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\bluetoooth1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Bluetooth & device connection</p>
+                                <p class="S1GreyDisp" >NFC, cast, tap, & pay</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="SetSection2">
+
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\brightness1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Display</p>
+                                <p class="S1GreyDisp" >Status bar, ambient display, night mode</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\customisation1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Customization</p>
+                                <p class="S1GreyDisp" >Wallpapers, accent color, font, tone</p>
+                            </div>
+
+                        </div>
+
+                        <div class="Wifi_Internet BLT_CONN SettAlert">
+
+                            <img src="oneplus images\sound1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Sound & vibration</p>
+                                <p class="S1GreyDisp" >Do Not Disturb, earphone mode, ringtone</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\buttons1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Buttons & gestures</p>
+                                <p class="S1GreyDisp" >Alert slider, navigation bar & gestures</p>
+                            </div>
+
+                        </div>
+
+                        <div class="Bluetooth_connection BLT_CONN SettAlert">
+
+                            <img src="oneplus images\apps1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Apps & notifications</p>
+                                <p class="S1GreyDisp" >Default apps, permissions</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="SetSection3">
+
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\brightness1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Security & lock screen</p>
+                                <p class="S1GreyDisp" >Fingerprint, Face Unlock, emergency rescue</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\customisation1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Privacy</p>
+                                <p class="S1GreyDisp" >Permissions, personal data</p>
+                            </div>
+
+                        </div>
+
+                        <div class="Wifi_Internet BLT_CONN loca_1 SettAlert">
+
+                            <img src="oneplus images\sound1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Location</p>
+                                <p class="S1GreyDisp" >Off</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="SetSection4">
+
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\battery1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Battery</p>
+                                <p class="S1GreyDisp" >100% - Should last until about 12 pm</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\storage1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Storage</p>
+                                <p class="S1GreyDisp" >42% used - 36.82 GB free</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="SetSection5">
+
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\accounts1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Accounts</p>
+                                <p class="S1GreyDisp" >OnePlus account, other accounts</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\welbeing1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Digital Wellbeing & controls</p>
+                                <p class="S1GreyDisp" >Screen time, app timers, bedtime schedules</p>
+                            </div>
+
+                        </div>
+
+                        <div class="Wifi_Internet BLT_CONN loca_1 SettAlert">
+
+                            <img src="oneplus images\google1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Google</p>
+                                <p class="S1GreyDisp" >Services & preferences</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="SetSection6">
+
+                        <div class="Wifi_Internet SettAlert">
+
+                            <img src="oneplus images\utilities1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">Utilities</p>
+                                <p class="S1GreyDisp" >App locker, parallel apps</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="Bluetooth_connection SettAlert">
+
+                            <img src="oneplus images\system1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">System</p>
+                                <p class="S1GreyDisp" >Language & keyboard, time, reset, updates</p>
+                            </div>
+
+                        </div>
+
+                        <div class="Wifi_Internet BLT_CONN loca_1 SettAlert">
+
+                            <img src="oneplus images\about1.png" alt="wificon" class="S1wifi">
+                            <div class="S1description">
+                                <p class="S1blackDisp">About phone</p>
+                                <p class="S1GreyDisp" >Oneplus 9</p>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="navigation-bar-7">
+                    <div onclick="settingscomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="settingscomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+            
+            <div class="CalculatorOneplus">
+
+                <div class="status-bar-3">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range11">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery11">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="CalculatorScreen">
+
+                    <p class="CalculatorHeading">Calculator</p>
+
+                    <input class="CalcuDispScreen" type="text" readonly >
+
+
+                </div>
+
+                <div class="CalculatorButtons">
+
+                    <div class="ButtonRow1">
+                        <div class="Cbtn CalciAllClear">AC</div>
+                        <div class="Cbtn CalciBackspace"><i class="fa-solid fa-delete-left"></i> </div>
+                        <div class="Cbtn CalciPercent">%</div>
+                        <div class="CbtnS CalCuBtnInpt">/</div>
+                    </div>
+
+                    <div class="ButtonRow1">
+                        <div class="Cbtn CalCuBtnInpt">7</div>
+                        <div class="Cbtn CalCuBtnInpt">8</div>
+                        <div class="Cbtn CalCuBtnInpt">9</div>
+                        <div class="CbtnS CalCuBtnInpt">*</div>
+                    </div>
+
+                    <div class="ButtonRow1">
+                        <div class="Cbtn CalCuBtnInpt">4</div>
+                        <div class="Cbtn CalCuBtnInpt">5</div>
+                        <div class="Cbtn CalCuBtnInpt">6</div>
+                        <div class="CbtnS CalCuBtnInpt">-</div>
+                    </div>
+
+                    <div class="ButtonRow1">
+                        <div class="Cbtn CalCuBtnInpt">1</div>
+                        <div class="Cbtn CalCuBtnInpt">2</div>
+                        <div class="Cbtn CalCuBtnInpt">3</div>
+                        <div class="CbtnS CalCuBtnInpt">+</div>
+                    </div>
+
+                    <div class="ButtonRow1">
+                        <div class="Cbtn CalCuBtnInpt">00</div>
+                        <div class="Cbtn CalCuBtnInpt">0</div>
+                        <div class="Cbtn CalCuBtnInpt">.</div>
+                        <div style="background-color: red; color: white;" class="CbtnS CalciBtnOpt"><i class="fa-solid fa-equals"></i></div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="navigation-bar-8">
+                    <div onclick="Calculatorcomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="Calculatorcomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="FileManagerApp">
+
+                <div class="status-bar-3 StsBar3Blue">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: white; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range12">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div class="battery12">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="FileHeader">
+                    <div class="TextFileManager">File Manager</div>
+                    <div class="FileHeadIcon">
+                        <span class="FIcon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="FIcon"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </div>
+                </div>
+                
+                <div class="FileCategoryOption">
+                    <div class="BoxesBox">
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f text.jpg" alt="documents">
+                            <p class="FileLabel">Documents</p>
+                            <p class="FileSp">229 items</p>
+                        </div>
+        
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f download.jpg" alt="documents">
+                            <p class="FileLabel">Downloads</p>
+                            <p class="FileSp">73 items</p>
+                        </div>
+    
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f alarm.jpg" alt="documents">
+                            <p class="FileLabel">Recent</p>
+                            <p class="FileSp">4 items</p>
+                        </div>
+    
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f gallery.jpg" alt="documents">
+                            <p class="FileLabel">Images</p>
+                            <p class="FileSp">221 items</p>
+                        </div>
+    
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f record.jpg" alt="documents">
+                            <p class="FileLabel">Videos</p>
+                            <p class="FileSp">3 items</p>
+                        </div>
+    
+                        <div class="FileBoxes">
+                            <img class="FileBoxImage" src="oneplus images\f music.jpg" alt="documents">
+                            <p class="FileLabel">Audio</p>
+                            <p class="FileSp">4 items</p>
+                        </div>
+                    </div>
+                    
+                    <div class="FileManagerOptions">
+    
+                        <div class="optionsWise">
+                            <img src="oneplus images\f android.jpg" alt="" class="OptionImage">
+                            <div class="OptionDiscp">
+                                <p class="OptDisp1">Install packages</p>
+                                <p class="OptDisp2">8 items</p>
+                            </div>
+                        </div>
+    
+                        <div class="optionsWise">
+                            <img src="oneplus images\f book.jpg" alt="" class="OptionImage">
+                            <div class="OptionDiscp">
+                                <p class="OptDisp1">Archives</p>
+                                <p class="OptDisp2">14 items</p>
+                            </div>
+                        </div>
+    
+                        <div class="optionsWise">
+                            <img src="oneplus images\f heart.jpg" alt="" class="OptionImage">
+                            <div class="OptionDiscp">
+                                <p class="OptDisp1">Favorites</p>
+                                <p class="OptDisp2">10 items</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="FileStorageOption">
+
+                    <div onclick = "GoToInternalOptions()" class="optionsWise">
+                        <img src="oneplus images\IS Icon.jpg" alt="" class="OptionImage optionimage11">
+                        <div class="OptionDiscp OptionDiscp10 ">
+                            <p class="OptDisp1 optdisp1">Internal storage</p>
+                            <p class="OptDisp2 optdisp2">Already used 27.32 GB &nbsp Available 36.68 GB</p>
+                            <div class="InternalLevelBar">
+                                <div class="InternalLevelBarFilled"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="FileFileDashOption">
+
+                    <img src="oneplus images\FileSharingImage.jpg" alt="" class="FileSharingImage">
+                    <h3 class="FileDashHead">Free file sharing via FileDash</h3>
+                    <p class="FileDashPara">Quickly share files with nearby devices</p>
+                    <div class="FileDashButtons">
+                        <button class="FileDashSend">SEND</button>
+                        <button class="FileDashSend FileDashRemove">RECEIVE</button>
+                    </div>
+                </div>
+
+                <div class="FileInternalStorage">
+                    
+                    <div class="FileInternalUpperBar">
+                        <span class="UpperBarWords">Storage</span>
+                        <span class="UpperBarWords1"><i class="fa-solid fa-chevron-right"></i></span>
+                        <span class="UpperBarWords2">Internal storage</span>
+                        <span class="UpperBarWords1"><i class="fa-solid fa-chevron-right"></i></span>
+                    </div>
+
+                    <div class="FilesInternalStorageOptions">
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Alarms</p>
+                                <p class="FILEOPTDISPlower">1 item 2022.11.04</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Android</p>
+                                <p class="FILEOPTDISPlower">3 items 2022.05.11</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Apps_backup_reinstall</p>
+                                <p class="FILEOPTDISPlower">1 item 2022.05.30</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">BGMI</p>
+                                <p class="FILEOPTDISPlower">1 item 2021.08.30</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">DamonPS2</p>
+                                <p class="FILEOPTDISPlower">2 items 2022.05.10</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">DCIM</p>
+                                <p class="FILEOPTDISPlower">5 items 2022.10.18</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Documents</p>
+                                <p class="FILEOPTDISPlower">2 items 2022.12.30</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">dolphin-mmj</p>
+                                <p class="FILEOPTDISPlower">6 items 2022.05.10</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Download</p>
+                                <p class="FILEOPTDISPlower">57 items 2023.02.05</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">ExtractedApks</p>
+                                <p class="FILEOPTDISPlower">1 item 2022.11.15</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Fonts</p>
+                                <p class="FILEOPTDISPlower">0 item 2022.06.05</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">MidasOversea</p>
+                                <p class="FILEOPTDISPlower">1 item 2021.08.30</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Notifications</p>
+                                <p class="FILEOPTDISPlower">1 item 2022.05.25</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Pictures</p>
+                                <p class="FILEOPTDISPlower">2 items 2022.05.10</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Record</p>
+                                <p class="FILEOPTDISPlower">2 items 2022.04.30</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Telegram</p>
+                                <p class="FILEOPTDISPlower">4 items 2021.12.16</p>
+                            </div>
+                        </div>
+
+                        <div class="FILESOPTS">
+                            <img src="oneplus images\ISFolderIcon.jpg" alt="" class="FILEOPTSIMG">
+                            <div class="FILEOPTDISP">
+                                <p class="FILEOPTDISPupper">Whatsapp</p>
+                                <p class="FILEOPTDISPlower">3 items 2022.05.12</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="PopUpWhite "></div>
+
+                <div class="FileDashPopup">
+                    <h3 class="FileDashPopupNotice">Notice</h3>
+                    <p class="FileDashPopupPara">
+                        Sorry, this system is not compaitable to access this option
+                    </p>
+
+                    <button class="PopUpCancelBtn">OK</button>
+                </div>
+
+                <div class="FileManagerFooter">
+
+                    <div class="FooterOptions">
+                        <img src="oneplus images\catgry grey.jpg" alt="" class="FooterOptImg FO1">
+                    </div>
+                    <div class="FooterOptions">
+                        <img src="oneplus images\strage grey.jpg" alt="" class="FooterOptImg FO2">
+                    </div>
+                    <div class="FooterOptions">
+                        <img src="oneplus images\fdash grey.jpg" alt="" class="FooterOptImg FO3">
+                    </div>
+                    <div class="FooterOptions ">
+                        <img src="oneplus images\clean.jpg" alt="" class="FooterOptImg FO4">
+                    </div>
+
+                </div>
+
+                <div class="navigation-bar-8 bbbb">
+                    <div onclick="FileManagercomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="FileManagercomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+            <div class="NotesApp">
+
+                <div style="background-color: #f1f5f9" class="status-bar-3 ">
+
+                    <div class="cameraandtime">
+                        <div class="camera">
+    
+                        </div>
+        
+                        <div id="time" class="time">
+                            
+                            
+                        </div>
+                    </div>
+    
+                    <div style="color: black; margin-left: 175px;" class="rangeandbattery">
+                        <div class="range12">
+                            <i class="fa-solid fa-wifi"></i>
+                            <i id="range" class="fa-solid fa-signal"></i>
+                        </div>
+        
+                        <div style="color: black;" class="battery12">
+                            100% <i class="fa-solid fa-battery-full"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="NotesInterface">
+
+                    <h1 class="NotesHeading">Notes</h1>
+                    <div class="NotesHeadIconBox">
+                        <div class="NotesheadIcon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="NotesheadIcon"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    </div>
+
+                    <div class="NotesSaved">
+
+                        <div class="NotesTemplate">Use Below Plus button to add the Notes</div>
+
+                        <div class="NotesAll">
+                            <div class="NotesTitle">Hello User</div>
+                            <div class="NotesDesp">Experience like real</div>
+                            <div class="NotesDelBtn">Delete</div>  
+                        </div>    
+
+                    </div>
+
+                    <div class="NotesPlusSign">+</div>
+
+                </div>
+
+                <div class="NotesEditWindow ">
+
+                    <div class="NotesEditHeader">
+                        <span class="NotesEditHeaderIcons"><i class="fa-solid fa-chevron-left"></i></span>
+                        <span class="NotesEditHeaderIcons"><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                    </div>
+
+                    <div class="NotesEditTitle">
+                        <input type="text" class="NotesEditTitleIpt" placeholder="Title">
+                    </div>
+
+                    <div class="NotesEditDesp">
+                        <textarea name="" class="NotesEditDespIpt" cols="30" rows="21" placeholder="Content"></textarea>
+                    </div>
+
+                    <div class="NoteseditButtons">
+                        <button class="Notesbtns Notesbtnscancel">Cancel</button>
+                        <button class="Notesbtns Notesbtnsave ">Save</button>
+                    </div>
+                </div>
+
+                <div class="navigation-bar-8 ">
+                    <div onclick="NotesAppcomeback()" style="font-size: 20px; margin-left: 20px; cursor: pointer"><b>◁</b></div>
+                    <div onclick="NotesAppcomeback()" style="font-size: 16px; cursor: pointer"><i class="fa-regular fa-circle"></i></div>
+                    <div style="font-size: 16px; margin-right: 20px; cursor: pointer"><i class="fa-regular fa-square"></i></div>
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
+    
+    
+      <script src="app.js"></script>  
+      
+</body>
+</html>

@@ -1,0 +1,1932 @@
+body{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: url('https://www.thoughtco.com/thmb/2RownM7L5wQVBu8oWbQ88WisUJs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/small-bubbles-of-oxygen-on-blurred-blue-background-liquid-oxygen-95235199-57a8c9d65f9b58974a5a36ef.jpg'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 88vh;
+}
+
+/* =================================HOME-SCREEN======================================= */
+
+.mobile-body{
+    border: 1px solid;
+    border-radius: 30px;
+    padding: 5px;
+    width: 325px;
+    margin-bottom: 20px;
+    background-color: black;
+}
+
+.home-screen{
+    border: 1px solid;
+    width: 322px;
+    height: 655px;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    border-radius: 24px;
+    background: url('oneplus images/HD-wallpaper-oneplus-9-pro-2021-thumbnail.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.navigation-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+.google-search{
+    background-color: white;
+    width: 80%;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px auto 22px;
+    opacity: 0.85;
+}
+.goxjub{
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google-logo{
+    height: 20px;
+    width: 20px;
+    padding-left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============================HOME-SCREEN APPS============================== */
+
+.lower-app-container{
+    margin-bottom: 28px;
+}
+
+.lower-apps{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.low-app{
+    width: 47px;
+    height: 47px;
+}
+
+.open-drawer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+}
+
+.upper-app-container{
+    margin-bottom: 20px;
+}
+
+.upper-apps{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.up-app{
+    width: 47px;
+    height: 47px;
+}
+
+.app1, .app2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 100;
+    color: white;
+}
+
+.app1 p, .app2 p{
+    margin: 0;
+    margin-top: 6px;
+}
+
+.upper-app-container-2{
+    margin-bottom: 22px;
+}
+
+.upper-apps-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* =======================status bar========================= */
+
+.time{
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    margin-left: 17px;
+    color: black;
+}
+
+.camera{
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 4px solid;
+    margin: 0 0 0 17px;
+    background-color: rgb(36, 36, 36);
+}
+
+.cameraandtime{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.rangeandbattery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    margin-top: 8px;
+
+}
+
+.status-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.battery{
+    margin-left: 6px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#range{
+    margin-left: 2px;
+}
+
+/* ==================== Homescreen - date and time widget ===================== */
+
+.times{
+    font-size: 48px;
+    display: flex;
+}
+
+.date-time{
+    margin: 50px 0 0 15px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+.date{
+    font-size: 12px;
+}
+
+.neversettle{
+    margin: 0;
+    font-size: large;
+    font-weight: 390;
+}
+
+.actualtime{
+    padding: 0 2px;
+}
+
+
+/* ============================= App-Drawer =============================== */
+
+.screen{
+    position: relative;
+    margin-bottom: 0;
+}
+
+.app-drawer{
+    width: 324px;
+    height: 0px;   
+    border-radius: 24px;
+    background: white;
+    opacity: 0.88;
+    position: absolute;
+    transition: 0.55s;
+    overflow-y: hidden;
+}
+
+.navigation-bar-1{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 3px 0;
+    background-color: rgba(134, 130, 130, 0.481);
+    position: absolute;
+    bottom: 0;
+}
+
+.drawer-apps-container{
+    position: relative;
+    height: 657px;
+    overflow-y: scroll;
+}
+
+/* .list-apps{
+    overflow: scroll;
+}
+
+.list-apps::-webkit-scrollbar {
+    display: none;
+} */
+
+.homescreen-apps{
+    transition: 0.3s;
+}
+
+/* ====================== App search bar ========================== */
+
+
+.search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    padding: 25px 20px 11px 20px;
+    color: rgb(206, 19, 19);
+}
+
+.search-bar::after{
+    content: "⋮";
+    color: black;
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+    left: 84px;
+}
+._1GTCc{
+    margin-right: 7px;
+}
+
+.border-bottom{
+    width: 92%;
+    border-bottom: 2.2px solid rgb(206, 63, 63);
+    margin: auto;
+}
+
+/* =========================== drawer apps ====================================== */
+
+.apppy{
+    width: 40px;
+    height: 40px;
+}
+
+.app-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 28px 8px;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+.drawer-apps-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+  /* ======================= notification panel half ========================== */
+
+
+.notification-container{
+    margin: 40px 0 0 10px;
+    height: 0px;           /*height = 385px*/
+    border-radius: 12px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    width: 303px;
+    /* box-shadow: 0px 0px 20px 2.2px; */
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.dateandrange{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 29px 0 15px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.range{
+    font-size: 11px;
+}
+
+.noti-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 14px 0 0 0;
+}
+
+.noti-buttons{
+    border: none;
+    border-radius: 50%;
+    font-size: large;
+    padding: 7px 12px;
+}
+
+.brightness-slider{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+.slider , .slider1{
+    width: 200px;
+    height: 3px;
+}
+
+.misc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#usage{
+    font-size: 10px;
+}
+
+
+/* ======================= notification panel full ========================== */
+
+
+.notification-container-full{
+    height: 385px;           /*height = 163px*/
+    background-color: white;
+    transition: 0.4s;
+    display: none;
+}
+
+.noti-full-date-time{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    margin: 3px 0 0 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.noti-time{
+    margin-right: 6px; 
+    display: flex;
+    font-size: 27.7px;
+}
+
+.noti-date{
+    font-size: 12px;
+}
+
+.full-noti-icons-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0 20px;
+}
+
+.full-noti-icon-each{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 50%;
+    padding: 13px 16px;
+}
+
+.icons-coloumn p{
+    text-align: center;
+    margin: 6px 0 0 0;
+    font-size: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
+}
+
+.left-mar{
+    margin-left: 9px;
+}
+
+.right-mar{
+    margin-right: 9px;
+}
+
+.color-change{
+    background: #1e90ff;
+}
+
+
+
+/* ======================= gallery ============================ */
+
+.gallery{
+    border: 1px solid;
+    width: 322px;
+    height: 0px;
+    border-radius: 24px;
+    background-color: white;
+    position: absolute;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.navigation-bar-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 3px 0;
+    background-color: rgb(226, 226, 226);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.block0{
+    border: 1px solid;
+    margin-top: 13px;
+    padding: 1.5px 45px;
+    background-color: lightgray;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Photos secton =--=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.photos-logo, .collections-logo, .explore-logo{
+    font-size: 40px;                  
+    padding: 15px 15px 130px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.diff-imgs{
+    width: 140px;
+    height: 160px;
+    padding: 8px;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: scroll;
+    height: 400px;
+    overflow-x: hidden;
+    margin: 0 5px;
+}
+
+.images::-webkit-scrollbar {
+    display: none;
+  }
+
+  .photos-container{
+    display: block;
+  }
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- collections secton =--=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.collections-container{
+    display: none;
+}
+
+  .SC-FRNDS{
+    height: 130px;
+    width: 130px;
+    padding: 6px;
+    border-radius: 15px;
+  }
+
+  .school-frnds, .diploma-frnds, .engg-frnds{
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: rgb(72, 72, 72);
+  }
+
+  .school-images{
+    display: flex;
+    margin: 0 5px;
+    overflow-x: scroll;
+  }
+
+  .school-images::-webkit-scrollbar {
+    display: none;
+  }
+
+  .images-1{
+    height: 400px;
+    overflow-x: hidden;
+}
+
+.images-1::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Explore secton =--=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+.explore-container{
+    display: none;
+}
+
+.contentsInside p{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.explore-icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.explore-names p{
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.explore-icons i{
+    padding: 23px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 50%;
+    color: rgb(137, 135, 135);
+}
+
+.contentsInside{
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contentsInside::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+/* ========================== dialer ====================================== */
+
+.navigation-bar-3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 3px 0;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    color: grey;
+}
+
+/* =-=--=-=-=-=-=-=-=-=-=- call =-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.dialer{
+    width: 322px;
+    height: 0px;
+    border-radius: 24px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.calls-logo{
+    padding: 0px 0 20px 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dialer-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+}
+
+.calls{
+    padding: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+.call-list{
+    overflow-y: scroll;
+    height: 462px;
+}
+
+.call-list::-webkit-scrollbar {
+    display: none;
+  }
+
+.dailerMains{
+    display: block;
+}
+
+.dial-pad{
+    position: absolute;
+    bottom: 100px;
+    right: 41%;
+    border-radius: 50%;
+    padding: 11px 13px 10px;
+    background-color: #00e300;
+    color: white;
+}
+
+/* -=-=-=-=-=-=-=-=-=-=-=-=-contacts =-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+.contact-icons{
+    padding: 20px 15px 30px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contacts-logo{
+    padding: 0px 0 70px 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    transition: 0.55s;
+    cursor: pointer;
+}
+
+.setProfile{
+    display: flex;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 8px;            
+    border-color: lightgrey;
+    width: 83%;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 60px;
+}
+
+.discp{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 15px;
+}
+
+.contacts-list{
+    padding: 0 10px 15px 15px;
+    margin-bottom: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+}
+
+.contactScroll{
+    height: 342px;       
+    overflow-y: scroll;
+}
+
+.contactScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .add-contact{
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 15px;
+    background-color: #00e300;
+    color: white;
+  }
+
+  .dialer-contacts{
+    display: none;
+  }
+
+
+/* ========================== messages ====================================== */
+
+
+.navigation-bar-4{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 4px 0;
+    background-color: #d6d6d6;
+    position: absolute;
+    bottom: 0;
+    color: grey;
+}
+
+.messages{
+    width: 322px;
+    height: 0px;
+    border-radius: 24px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.mssgHeader{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 10px 0 15px;
+    margin: 0;
+    box-shadow: 0px 3px 3px 1px rgb(209, 208, 208);
+}
+
+.mssgIcons {
+    display: flex;
+    align-items: center;
+}
+
+.mssgIcons i{
+    margin: 0px 10px;
+}
+
+.message-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 32px;
+    width: 100%;
+    box-shadow: 3px 0px 3px 1px rgb(209, 208, 208);
+}
+
+.sendMessage{
+    text-align: center; 
+    padding: 0px 16px; 
+    background-color: rgb(166, 173, 180);
+    height: 50px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.add-sign{
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    width: 70%;
+    padding: 10px;
+    border: none;
+    background-color: #f1f5f9;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dispMssg{
+    height: 469px;
+}
+
+.dispMssg::-webkit-scrollbar {
+    display: none;
+}
+
+.message-type {
+    margin: 10px;
+    background-color: #01ce01;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 14px;
+    text-align: right;
+}
+
+
+/* ============================ camera ======================================= */
+
+.camera-1{
+    width: 322px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.navigation-bar-5{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 4px 0;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.camHeader{
+    padding: 30px;
+    /* border: 1px solid; */
+    width: 100%;
+    background-color: black;
+}
+
+.camOnOff{
+    border: 1px solid;
+    width: 100%;
+    height: 410px;
+}
+
+.camCapture{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 152px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camButton{
+    background-color: white;
+    border: 1px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#webcam{
+    width: 322px;
+    position: absolute;
+    height: 412px;
+}
+
+canvas{
+    display: none;
+}
+
+#file-input{
+    position: absolute;
+    bottom: 68px;
+    width: 30px;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* ============================ chrome ======================================= */
+
+
+.status-bar-1{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 0, 0.411);
+    z-index: 1;
+}
+
+.Chrome{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.Chrome1{
+    width: 323px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.navigation-bar-6{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 4px 0;
+    background-color: rgba(0, 0, 0, 0.56);
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* ============================ netflix ======================================= */
+
+.netflix{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.netflix1{
+    width: 323px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+/* ============================ question papers ======================================= */
+
+.questionpapers1{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+/* ============================ spotify app ======================================= */
+
+.spotify1{
+    width: 323px;
+    height: 0;
+    border-radius: 20px;
+    background-color: #f1f5f9;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.status-bar-2{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(17, 17, 17);
+    padding-bottom: 5px;
+    /* z-index: 1; */
+}
+
+.navigation-bar-7{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+    padding: 4px 0;
+    background-color: rgba(0, 0, 0, 0.953);
+    position: absolute;
+    bottom: 0;
+}
+
+.spotifyHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    font-size: large;
+    color: white;
+    background-image: linear-gradient(to right, rgb(97, 97, 97) ,black);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.SpotiHeadericons i{
+    margin-left: 13px;
+}
+
+.spotifyFooter{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: rgb(161, 161, 161);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.953);
+}
+
+.spotifyMain{
+    height: 595px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+.spotiHome, .spotiSearch{
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+
+.spotiLibrary{
+    display: flex;
+    flex-direction: column;
+}
+
+.spotiHome{
+    margin-left: 22px;
+}
+
+.spotiSearch{
+    margin-left: 10px;
+}
+
+.spotiTopImage{
+    height: 180px;
+    width: 100%;
+}
+
+.madeForYouImages{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.madeForYouImages::-webkit-scrollbar {
+    display: none;
+}
+
+.MFUStyle{
+    height: 180px;
+    padding-left: 5px;
+    background-color: black;
+}
+
+.MFUname{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    padding: 30px 10px 10px 10px;
+}
+
+.spotifyMainScroll{
+    height: 585px;
+    overflow-y: scroll;
+
+}
+
+.spotifyMainScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.spotiheadline{
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+}
+
+.spotiheadline{
+    padding-top: 30px ;
+    padding-bottom: 30px ;
+}
+
+.spotifySongs{
+    
+    background-color: black;
+}
+
+.spotsong{
+    width: 100%;
+    background-color: white;
+}
+
+.SongImage{
+    width: 100%;
+}
+
+.SingleSongs{
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    background-color: white;
+    margin: 0 auto 30px;
+}
+
+
+/* ====================================settings app========================================== */
+
+.settingsApp{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: rgb(18, 18, 18);
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.settingHeading p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin: 15px 0 10px 12px;
+    color: white;
+    cursor: pointer;
+}
+
+#SettingSearchIcon{
+    margin-left: 290px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.S1wifi{
+    height: 35px;
+    margin-right: 10px;
+}
+
+.Wifi_Internet{
+    display: flex;
+    margin-bottom: 18px;
+    cursor: pointer;
+}
+
+.S1description .S1blackDisp{
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: white;
+}
+
+.S1GreyDisp{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+.Bluetooth_connection{
+    display: flex;
+    cursor: pointer;
+}
+
+.SetSection1,.SetSection2,.SetSection3,.SetSection4,.SetSection5,.SetSection6{
+    padding: 11px;
+    border-radius: 8px;
+    background-color: #56565681;
+    margin: 0 5px 13px 5px;
+}
+
+.BLT_CONN{
+    margin-top: 18px;
+}
+
+.SettingScroll{
+    height: 490px;
+    overflow: scroll;
+}
+
+.SettingScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.loca_1{
+    margin-bottom: 0;
+}
+
+
+/* ==================================== Calculator ========================================== */
+
+.CalculatorOneplus{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.status-bar-3{
+    /* position: absolute; */
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+    padding-bottom: 5px;
+    /* z-index: 1; */
+}
+
+.battery11{
+    margin-left: 6px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    font-weight: 800;
+}
+
+.range11{
+    color: black;
+}
+
+.navigation-bar-8{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+    padding: 4px 0;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+
+.CalculatorScreen{
+    border: none;
+    border-radius: 13px;
+    box-shadow: 0.5px 1.5px rgba(79, 79, 79, 0.621);
+}
+
+.CalcuDispScreen{
+    width: 95%;
+    border: none; 
+    height: 40px;  
+    font-size: 40px; 
+    margin-bottom: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: context-menu;
+    text-align: right;
+    outline: none;
+}
+
+.CalculatorHeading{
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    margin: 15px 0 10px 10px;
+    font-weight: 600;
+}
+
+.CalculatorButtons{
+    background-color: rgba(245, 245, 245, 0.347);
+}
+
+.ButtonRow1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14.7px;
+}
+
+.Cbtn,.CbtnS{
+    font-size: 25px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.CbtnS{
+    font-size: 27px;
+    font-weight: bolder;
+    border-radius: 50%;
+    background-color: rgb(214, 214, 214);
+}
+
+
+
+/* ============================= FileManagerApp ==================================== */
+
+
+.FileManagerApp{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.StsBar3Blue{
+    background-color: blue;
+}
+
+.FileHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    color: #d6d6d6;
+    background-color: blue;
+}
+
+.TextFileManager{
+    margin-left: 13px;
+}
+
+.FileHeadIcon{
+    margin-right: 13px;
+}
+
+.battery12{
+    margin-left: 6px;
+    margin-right: 15px;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 800;
+}
+
+.FIcon{
+    margin: 0 8px;
+}
+
+/* .bbbb{
+    background-color: black;
+} */
+
+.FileBoxImage{
+    height: 30px;
+    padding: 3px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.FileLabel{
+    margin: 5px 7px 1px 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.FileSp{
+    margin: 0 10px;
+    font-size: 9px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+}
+
+.FileBoxes{
+    height: 91px;
+    width: 91px;
+    border: 1px solid lightgray;
+    box-shadow: 0.3px 0.3px lightgray;
+    margin: 5px;
+    border-radius: 9px;
+    padding: 1.5px;
+    cursor: pointer;
+}
+
+.BoxesBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 9px;
+}
+
+.FileManagerOptions{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.optionsWise{
+    display: flex;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.OptionImage{
+    height: 35px;
+    margin-left: 8px;
+}
+
+.OptDisp1{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.OptDisp2{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: gray;
+}
+
+.OptionDiscp{
+    margin-left: 7px;
+    margin-top: 2.5px;
+}
+
+.FooterOptImg{
+    height: 61px;
+    cursor: pointer;
+    /* border: 1px solid; */
+}
+
+.FileManagerFooter{
+    display: flex;
+    border-top: 0.1px solid lightgrey;
+}
+
+.FileCategoryOption{
+    height: 473px;          /* 473px*/
+    overflow: hidden;
+}
+
+.FileStorageOption{
+    height: 473px;          /* 473px*/
+    overflow: hidden;
+    display: none;
+}
+
+.InternalLevelBar{
+    width: 100%;
+    height: 4px;
+    background-color: lightgrey;
+}
+
+.OptionDiscp10{
+    width: 245px;
+}
+
+.optdisp2{
+    margin-top: 5px;
+}
+
+.InternalLevelBar{
+    margin-top: 8px;
+}
+
+.InternalLevelBarFilled{
+    width: 41%;
+    height: 4px;
+    background-color: rgb(5, 5, 209);
+}
+
+.optionimage11{
+    padding-top: 10px;
+}
+
+.FileFileDashOption{
+    height: 473px;          /* 473px*/
+    overflow: hidden;
+    display: none;
+}
+
+.FileSharingImage{
+    width: 100%;
+}
+
+.FileDashHead{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.FileDashPara{
+    color: grey;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.FileDashButtons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+
+.FileDashSend{
+    width: 120px;
+    height: 34px;
+    background-color: rgb(0, 0, 213);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.FileInternalStorage{
+    height: 473px;
+    display: none;
+}
+
+.FileInternalUpperBar{
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-size: 12px;
+}
+
+.FileInternalUpperBar{
+    background-color: rgb(222, 222, 222);
+    padding: 9px 8px;
+}
+
+.UpperBarWords1{
+    font-size: 9px;
+    margin: 0 5px;
+}
+
+.UpperBarWords2{
+    color: black;
+    font-weight: bold;
+}
+
+.FilesInternalStorageOptions{
+    height: 437.6px;
+    overflow: scroll;
+    /* border: 1px solid; */
+}
+
+.FilesInternalStorageOptions::-webkit-scrollbar {
+    display: none;
+  }
+
+.FILESOPTS{
+    display: flex;
+    margin-top: 11px;
+    padding: 10px 10px 10px;
+}
+
+.FILEOPTSIMG{
+    height: 35px;
+    margin-right: 8px;
+}
+
+.FILEOPTDISPupper{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.FILEOPTDISPlower{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    color: grey;
+}
+
+.UpperBarWords,.UpperBarWords2{
+    cursor: pointer;
+}
+
+.FileDashPopup{
+    width: 260px;
+    height: 165px;
+    position: absolute;
+    /* top: 200px;
+    left: 42px; */
+    transform: translate(12%, -200%) scale(0);
+    border-radius: 15px;
+    z-index: 2;
+    background-color: white;
+    /* box-shadow: 2px 2px 5px 1px lightgray */
+    /* -webkit-box-shadow: 0 0 4px #f5f5f5; */
+}
+
+.FileDashPopup11{
+    transition: all 300ms ease-in-out;
+    transform: translate(12%, -200%) scale(1);
+}
+
+.FileDashPopupNotice{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+    color: blue;
+}
+
+.FileDashPopupPara{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.PopUpCancelBtn{
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px 23px;
+    transform: translate(150%);
+    border-radius: 8px;
+    background-color: rgb(0, 85, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.PopUpWhite{
+    width: 323px;
+    height: 656px;
+    border-radius: 20px;
+    background-color: rgba(76, 75, 75, 0.514);
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    z-index: 1;
+    display: none;
+}
+
+
+
+/* ============================= Notes App ==================================== */
+
+
+.NotesApp{
+    width: 323px;
+    height: 0px;
+    border-radius: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0.5px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.NotesInterface{
+    height: 590px;
+    background-color: #f1f5f9;
+    /* display: none; */
+}
+
+.NotesHeading{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0px 12px 10px;
+    padding-top: 5px;
+}
+
+.NotesHeadIconBox{
+    display: flex;
+    justify-content: end;
+}
+
+.NotesheadIcon{
+    margin-right: 20px;
+    margin-bottom: 18px;
+}
+
+.NotesSaved{
+    height: 484.6px;
+    /* border: 1px solid; */
+    overflow: scroll;
+}
+
+.NotesTemplate{
+    font-size: 12px;
+    /* font-weight: 600; */
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto 11px;
+    padding: 3px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.NotesSaved::-webkit-scrollbar {
+    display: none;
+}
+
+.NotesAll{
+    padding: 10px;
+    width: 87%;
+    border: 1px solid lightgray;
+    margin: 10px auto;
+    border-radius: 7px;
+    background-color: white;
+}
+
+
+.NotesTitle{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.NotesDesp{
+    padding: 5px;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.NotesDelBtn{
+    padding: 4.4px;
+    font-size: 12.5px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 5px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 40px;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    cursor: pointer;
+}
+
+.NotesPlusSign{
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    padding: 12px 17px;
+    border-radius: 50%;
+    background-color: rgb(255, 68, 0);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 5px 5px 5px gray;
+    cursor: pointer;
+}
+
+.NotesEditWindow{
+    height: 590px;
+    width: 100%;
+    background-color: #f1f5f9;
+    /* border: 1px solid; */
+    transform: translate(0,-100%) scale(0);
+    transition: all 300ms ease-in-out;    
+}
+
+.NotesEditWindow11{
+    transform: translate(0,-100%) scale(1);
+    transition: all 300ms ease-in-out;
+}
+
+.NotesEditHeaderIcons{
+    font-size: 14px;
+}
+.NotesEditHeader{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgb(180, 180, 180);
+    margin-bottom: 10px;
+}
+
+.NotesEditTitleIpt{
+    width: 93%;
+    font-size: 25px;
+    margin: 11.5px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    padding: 8px 0;
+    background-color: #f1f5f9;
+    border-bottom: 0.5px solid gray;
+}
+
+.NotesEditDespIpt{
+    width: 93%;
+    font-size: 15px;
+    margin: 11.5px;
+    margin-bottom: 7px;
+    outline: none;
+    border: none;
+    padding: 8px 0;
+    resize: none;
+    background-color: #f1f5f9;
+}
+
+.NotesEditDespIpt::-webkit-scrollbar {
+    display: none;
+}
+
+.NoteseditButtons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Notesbtns{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    width: 35%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    box-shadow: 4px 3px 5px gray;
+}
+
+.Notesbtnscancel{
+    background-color: red;
+}
